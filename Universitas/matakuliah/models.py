@@ -4,7 +4,7 @@ from django.db import models
 
 from django.db import models
 
-class MataKuliah(models.Model):
+class Matakuliah(models.Model):
     kode_matkul = models.CharField(max_length=10, primary_key=True)
     nama_matkul = models.CharField(max_length=255)
     sks = models.IntegerField()
