@@ -1,8 +1,6 @@
 from django.urls import path
-from rest_framework.routers import DefaultRouter
-from .views import MatakuliahViewSet
+from matakuliah import views
 
-router = DefaultRouter()
-router.register(r'matakuliah', MatakuliahViewSet)
-
-urlpatterns = router.urls
+urlpatterns =[
+    path('matakuliah/', views.Matakuliah_list),
+]

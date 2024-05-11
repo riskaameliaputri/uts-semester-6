@@ -1,9 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
-from django.db import models
-
 class Matakuliah(models.Model):
     kode_matkul = models.CharField(max_length=10, primary_key=True)
     nama_matkul = models.CharField(max_length=255)

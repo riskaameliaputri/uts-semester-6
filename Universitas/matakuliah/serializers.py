@@ -4,4 +4,4 @@ from .models import Matakuliah
 class MatakuliahSerializer(serializers.ModelSerializer):
     class Meta:
         model = Matakuliah
-        fields = '__all__'
+        fields = ["kode_matkul ", "nama_matkul", "sks", " dosen_pengampu"]

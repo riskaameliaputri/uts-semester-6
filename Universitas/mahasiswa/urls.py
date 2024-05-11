@@ -1,8 +1,6 @@
 from django.urls import path
-from rest_framework.routers import DefaultRouter
-from .views import MahasiswaViewSet
+from mahasiswa import views
 
-router = DefaultRouter()
-router.register(r'Mahasiswa', MahasiswaViewSet)
-
-urlpatterns = router.urls
+urlpatterns =[
+    path('mahasiswa/', views.Mahasiswa_list),
+]

@@ -4,4 +4,4 @@ from .models import Mahasiswa
 class MahasiswaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Mahasiswa
-        fields = '__all__'
+        fields = ["nim", "nama", "jurusan", "angkatan"]

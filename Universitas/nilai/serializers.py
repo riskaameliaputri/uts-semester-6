@@ -4,4 +4,4 @@ from .models import Nilai
 class NilaiSerializer(serializers.ModelSerializer):
     class Meta:
         model = Nilai
-        fields = '__all__'
+        fields = ["name", "npm_id"]
